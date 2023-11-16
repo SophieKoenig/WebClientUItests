@@ -1,4 +1,4 @@
-namespace BaseAutomatedTests
+namespace BaseAutomatedTests.PageObjects
 {
     [TestClass]
     public class UnitTest1
