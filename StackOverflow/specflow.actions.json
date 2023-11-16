@@ -1,0 +1,11 @@
+"playwright": {
+  "browser": "chromium",
+  "defaultTimeout" ": 300,
+  "timeout": 60000,
+  "headless": false,
+  "traceDir": "traces",
+  "viewport": {
+    "width": 16000,
+    "height":  1200
+  }
+}
