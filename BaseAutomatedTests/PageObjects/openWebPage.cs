@@ -6,12 +6,16 @@ namespace BaseAutomatedTests.PageObjects
 {
     public class OpenWebPage : BasePage
     {
+        public OpenWebPage(BrowserDriver browserDriver) : base(browserDriver) 
+        { 
+        }
+
         public async Task EnsurePageIsOpen(string appId)
         {
-            var pageUrl = string.Format(TextContext.Parameters.Get("webAppUrl"), appId);
+            var pageUrl = string.Format(TestContext.Parameters.Get("webAppUrl"), appId);
             if ((await _page).Url != pageUrl)
             {
-                await (await _page).GotoAsync(pageUrl, new PageGotoOptions);
+                await (await _page).GotoAsync(pageUrl, new PageGotoOptions { Timeout = 10000 });
             }
         }
     }
