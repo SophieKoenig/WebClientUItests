@@ -5,7 +5,12 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseAutomatedTests", "BaseAutomatedTests\BaseAutomatedTests.csproj", "{8353F210-F194-4DFA-9913-791DA1135498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflow", "StackOverflow\StackOverflow.csproj", "{AC38DB59-B917-4849-9CD9-11F4150473B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflow", "StackOverflow\StackOverflow.csproj", "{AC38DB59-B917-4849-9CD9-11F4150473B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{75D3BD2A-8889-4561-940B-56E59B736007}"
+	ProjectSection(SolutionItems) = preProject
+		webpage.runsettings = webpage.runsettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
