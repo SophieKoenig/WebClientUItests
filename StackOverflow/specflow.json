@@ -1,12 +1,15 @@
-"exclude": [
-  "**/bin",
-  "**/bower_components",
-  "**/jspm_packages",
-  "**/node_modules",
-  "**/obj",
-  "**/platforms"
-], "stepAssemblies": [
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ], 
+  "stepAssemblies": [
   {
-    "assembly":  "Flowfactory.BaseAutomatedTests"
+    "assembly": "Flowfactory.BaseAutomatedTests"
   }
 ]
+}
