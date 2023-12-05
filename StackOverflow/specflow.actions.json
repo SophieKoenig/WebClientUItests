@@ -1,5 +1,5 @@
-"playwright": [
-  {
+{
+"playwright": {
     "browser": "chromium",
     "defaultTimeout": 300,
     "timeout": 60000,
@@ -10,4 +10,4 @@
       "height": 1200
     }
   }
-]
+}
