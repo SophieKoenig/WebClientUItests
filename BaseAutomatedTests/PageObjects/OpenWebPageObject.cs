@@ -4,9 +4,9 @@ using SpecFlow.Actions.Playwright;
 
 namespace BaseAutomatedTests.PageObjects
 {
-    public class OpenWebPage : BasePage
+    public class OpenWebPageObject : BasePage
     {
-        public OpenWebPage(BrowserDriver browserDriver) : base(browserDriver) 
+        public OpenWebPageObject(BrowserDriver browserDriver) : base(browserDriver) 
         { 
         }
 
