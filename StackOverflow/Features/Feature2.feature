@@ -2,7 +2,7 @@
 
 A short summary of the feature
 
-@tag1
+@ignore
 Scenario: [scenario name]
 	Given [context]
 	When [action]
