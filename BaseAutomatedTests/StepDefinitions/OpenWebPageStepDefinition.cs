@@ -15,7 +15,8 @@ namespace BaseAutomatedTests.StepDefinitions
         [StepDefinition(@"go to '([^']*)'")]
         public async Task GoToWebPage(string appUrl)
         {
-           
+            try
+            {
                 string? baseDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
                 string configFilePath = Path.Combine(baseDirectory, "Config", "config.json");
 
@@ -23,7 +24,14 @@ namespace BaseAutomatedTests.StepDefinitions
                         .SetBasePath(baseDirectory)
                         .AddJsonFile(configFilePath);
                 IConfigurationRoot configuration = configBuilder.Build();
-            
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error reading config file: {ex.Message}");
+            }
             
                 await _openWebPageObject.EnsurePageIsOpen(appUrl);
         }
