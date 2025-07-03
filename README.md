@@ -37,8 +37,8 @@ Example </br>
   Scenario: Successful login with valid credentials </br>
     Given I am on the login page </br>
     When I login with valid credentials </br>
-    Then I should see the dashboard </br>
-Implement step definitions in C# under the Steps/ directory. </em>
+    Then I should see the dashboard </em> </br>
+Implement step definitions in C# under the Steps/ directory. </br>
 
 Best Practices
 - Use the Page Object Model for all UI interactions.
