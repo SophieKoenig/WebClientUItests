@@ -1,6 +1,6 @@
 # WebClientUItests
-- Automated Frontend Testing Framework
-- Automated UI Testing with C#, .NET, SpecFlow & Playwright
+Automated Frontend Testing Framework
+Automated UI Testing with C#, .NET, SpecFlow & Playwright
 
 Project Overview
 - This project provides an automated testing framework for frontend components, leveraging C#, .NET, SpecFlow, and Playwright. It enables robust, maintainable, and scalable UI testing using Behavior-Driven Development (BDD) principles and the Page Object Model (POM) design pattern.
@@ -31,13 +31,13 @@ Execute all tests:
 Writing Tests
 - Define scenarios in .feature files using Gherkin syntax:
 
-Example
-<em> Feature: Login
+Example </br>
+<em> Feature: Login </br>
 
-  Scenario: Successful login with valid credentials
-    Given I am on the login page
-    When I login with valid credentials
-    Then I should see the dashboard
+  Scenario: Successful login with valid credentials </br>
+    Given I am on the login page </br>
+    When I login with valid credentials </br>
+    Then I should see the dashboard </br>
 Implement step definitions in C# under the Steps/ directory. </em>
 
 Best Practices
