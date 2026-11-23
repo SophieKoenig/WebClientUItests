@@ -1,7 +1,9 @@
 ﻿Feature: GoToWebPage
 
-Go to the StackOverflow web page
+Go to the VÖBB web page
 
-Scenario: Open browser and go to the StackOverflow web page
+Scenario: Open browser and go to the VÖBB web page and click button
 	Given go to 'voebb.de'
-	Then the page title contains "VÖBB"   
+	Then the page title contains "VÖBB"
+	Then click the button "Digitale Angebote"
+	And the page title contains "Die Digitalen Angebote des VÖBB - Verbund der Öffentlichen Bibliotheken Berlins"

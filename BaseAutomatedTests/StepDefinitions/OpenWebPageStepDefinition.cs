@@ -48,5 +48,13 @@ namespace BaseAutomatedTests.StepDefinitions
             var title = await page.TitleAsync();
             Assert.That(title, Does.Contain(text));
         }
+
+        [Then(@"click the button ""(.*)""")]
+        public async Task ClickButton(string buttonText)
+        {
+            var page = await _openWebPageObject._page;
+            await page.GetByText(buttonText, new() { Exact = true }).ClickAsync();
+        }
     }
+
 }
