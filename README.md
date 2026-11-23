@@ -1,13 +1,13 @@
 # WebClientUItests
 Automated Frontend Testing Framework
-Automated UI Testing with C#, .NET, SpecFlow & Playwright
+Automated UI Testing with C#, .NET, Reqnroll & Playwright
 
 Project Overview
-- This project provides an automated testing framework for frontend components, leveraging C#, .NET, SpecFlow, and Playwright. It enables robust, maintainable, and scalable UI testing using Behavior-Driven Development (BDD) principles and the Page Object Model (POM) design pattern.
+- This project provides an automated testing framework for frontend components, leveraging C#, .NET, Reqnroll, and Playwright. It enables robust, maintainable, and scalable UI testing using Behavior-Driven Development (BDD) principles and the Page Object Model (POM) design pattern.
 
 Features
 - End-to-End UI Testing: Automates user interactions and validates frontend behavior.
-- Behavior-Driven Development: Write tests in human-readable Gherkin syntax via SpecFlow.
+- Behavior-Driven Development: Write tests in human-readable Gherkin syntax via Reqnroll.
 - Page Object Model: Promotes maintainability and reusability of test code.
 - Cross-Browser Support: Powered by Playwright for reliable testing across browsers.
 - Integration Ready: Can be incorporated into CI/CD pipelines for continuous testing.
@@ -15,7 +15,7 @@ Features
 Requirements
 - .NET 6.0 SDK or higher
 - Node.js (for Playwright)
-- SpecFlow
+- Reqnroll
 - Playwright
 
 Project Structure
