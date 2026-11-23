@@ -1,6 +1,7 @@
 ﻿using BaseAutomatedTests.PageObjects;
-using TechTalk.SpecFlow;
-using Microsoft.Extensions.Configuration; 
+using Reqnroll;
+using Microsoft.Extensions.Configuration;
+using NUnit.Framework;
 
 namespace BaseAutomatedTests.StepDefinitions
 {
@@ -17,7 +18,11 @@ namespace BaseAutomatedTests.StepDefinitions
         {
             try
             {
+
                 string? baseDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
+
+                if(baseDirectory is null)
+                    throw new Exception("Could not resolve base directory.");
                 string configFilePath = Path.Combine(baseDirectory, "Config", "config.json");
 
                 var configBuilder = new ConfigurationBuilder()
@@ -34,6 +39,14 @@ namespace BaseAutomatedTests.StepDefinitions
             }
             
                 await _openWebPageObject.EnsurePageIsOpen(appUrl);
+        }
+
+        [Then(@"the page title contains ""(.*)""")]
+        public async Task TitleContains(string text)
+        {
+            var page = await _openWebPageObject._page;
+            var title = await page.TitleAsync();
+            Assert.That(title, Does.Contain(text));
         }
     }
 }
